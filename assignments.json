@@ -1,0 +1,10 @@
+﻿{
+  "assignments": [
+    {
+      "assignment_id": "assignment-001",
+      "title": "Introduction to Python",
+      "description": "Write a simple Python program and explain how it works.",
+      "template_id": "template-001"
+    }
+  ]
+}

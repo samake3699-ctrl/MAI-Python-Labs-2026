@@ -1,0 +1,3 @@
+
+{"template_id":"template-001","content":"print('Hello')\nprint('Example')"}
+{"template_id":"template-002","content":"x = 10\nprint(x)"}

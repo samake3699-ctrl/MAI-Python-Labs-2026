@@ -1,0 +1,24 @@
+# Environnement virtuel Python
+.venv/
+venv/
+
+# Fichiers temporaires Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Métadonnées générées lors de l'installation
+*.egg-info/
+build/
+dist/
+
+# Cache des tests
+.pytest_cache/
+.coverage
+
+# Fichiers locaux de l'éditeur
+.vscode/
+
+# Fichiers système
+.DS_Store
+Thumbs.db
