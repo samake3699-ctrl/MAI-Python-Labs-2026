@@ -1,0 +1,107 @@
+{
+  "experiment": "streaming + validation + Token/AST vs fixed reference",
+  "note": "N comparaisons contre une référence fixe, pas toutes les paires possibles",
+  "seed": 42,
+  "repeats": 3,
+  "sizes": [
+    100,
+    1000,
+    5000
+  ],
+  "python": "3.14.8",
+  "platform": "Windows-11-10.0.22631-SP0",
+  "memory_profiler": "tracemalloc : allocations Python, pas RAM totale du processus",
+  "generation_included_in_timing": false,
+  "results": [
+    {
+      "size": 100,
+      "trials": [
+        {
+          "processed": 100,
+          "wall_seconds": 0.37281910004094243,
+          "peak_mib": 0.33359432220458984,
+          "undefined_scores": 0,
+          "score_checksum": 82.074249
+        },
+        {
+          "processed": 100,
+          "wall_seconds": 0.5935080000199378,
+          "peak_mib": 0.29669666290283203,
+          "undefined_scores": 0,
+          "score_checksum": 82.074249
+        },
+        {
+          "processed": 100,
+          "wall_seconds": 0.5168935999972746,
+          "peak_mib": 0.29677867889404297,
+          "undefined_scores": 0,
+          "score_checksum": 82.074249
+        }
+      ],
+      "wall_mean_seconds": 0.4944069000193849,
+      "wall_median_seconds": 0.5168935999972746,
+      "peak_mean_mib": 0.3090232213338216,
+      "peak_median_mib": 0.29677867889404297
+    },
+    {
+      "size": 1000,
+      "trials": [
+        {
+          "processed": 1000,
+          "wall_seconds": 3.589566000038758,
+          "peak_mib": 0.33643150329589844,
+          "undefined_scores": 0,
+          "score_checksum": 756.883986
+        },
+        {
+          "processed": 1000,
+          "wall_seconds": 3.6455807000165805,
+          "peak_mib": 0.3025951385498047,
+          "undefined_scores": 0,
+          "score_checksum": 756.883986
+        },
+        {
+          "processed": 1000,
+          "wall_seconds": 5.282296000048518,
+          "peak_mib": 0.30201148986816406,
+          "undefined_scores": 0,
+          "score_checksum": 756.883986
+        }
+      ],
+      "wall_mean_seconds": 4.172480900034619,
+      "wall_median_seconds": 3.6455807000165805,
+      "peak_mean_mib": 0.31367937723795575,
+      "peak_median_mib": 0.3025951385498047
+    },
+    {
+      "size": 5000,
+      "trials": [
+        {
+          "processed": 5000,
+          "wall_seconds": 16.721965299919248,
+          "peak_mib": 0.3419504165649414,
+          "undefined_scores": 0,
+          "score_checksum": 3741.901117
+        },
+        {
+          "processed": 5000,
+          "wall_seconds": 16.40662909997627,
+          "peak_mib": 0.33417606353759766,
+          "undefined_scores": 0,
+          "score_checksum": 3741.901117
+        },
+        {
+          "processed": 5000,
+          "wall_seconds": 17.2535108999582,
+          "peak_mib": 0.3193082809448242,
+          "undefined_scores": 0,
+          "score_checksum": 3741.901117
+        }
+      ],
+      "wall_mean_seconds": 16.79403509995124,
+      "wall_median_seconds": 16.721965299919248,
+      "peak_mean_mib": 0.3318115870157878,
+      "peak_median_mib": 0.33417606353759766
+    }
+  ]
+}

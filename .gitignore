@@ -22,3 +22,7 @@ dist/
 # Fichiers système
 .DS_Store
 Thumbs.db
+
+Lab1_Python_Core.zip
+data/lab2/*.prof
+data/lab2/profile_run_*.json

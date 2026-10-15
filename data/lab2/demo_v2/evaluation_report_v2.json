@@ -1,0 +1,613 @@
+{
+  "schema_version": 1,
+  "corpus": "synthétique pédagogique : résultats non généralisables aux étudiants réels",
+  "task": "signaler une relation de dérivation pour revue humaine, pas prouver une fraude",
+  "threshold_rule": "maximiser F1 sur tuning ; égalité -> seuil le plus élevé",
+  "evaluation_rule": "seuil fixé avant l'évaluation ; métriques sur scores définis",
+  "n_pairs": 40,
+  "n_tuning": 20,
+  "n_evaluation": 20,
+  "methods": {
+    "token": {
+      "threshold_from_tuning": 0.0,
+      "tuning": {
+        "total_pairs": 20,
+        "scored_pairs": 20,
+        "undefined": 0,
+        "undefined_fraction": 0.0,
+        "threshold": 0.0,
+        "tp": 15,
+        "fp": 5,
+        "tn": 0,
+        "fn": 0,
+        "confusion_matrix": [
+          [
+            0,
+            5
+          ],
+          [
+            0,
+            15
+          ]
+        ],
+        "precision": 0.75,
+        "recall": 1.0,
+        "f1": 0.8571428571428571
+      },
+      "evaluation": {
+        "total_pairs": 20,
+        "scored_pairs": 20,
+        "undefined": 0,
+        "undefined_fraction": 0.0,
+        "threshold": 0.0,
+        "tp": 15,
+        "fp": 5,
+        "tn": 0,
+        "fn": 0,
+        "confusion_matrix": [
+          [
+            0,
+            5
+          ],
+          [
+            0,
+            15
+          ]
+        ],
+        "precision": 0.75,
+        "recall": 1.0,
+        "f1": 0.8571428571428571
+      }
+    },
+    "ast": {
+      "threshold_from_tuning": 0.6666666666666666,
+      "tuning": {
+        "total_pairs": 20,
+        "scored_pairs": 20,
+        "undefined": 0,
+        "undefined_fraction": 0.0,
+        "threshold": 0.6666666666666666,
+        "tp": 15,
+        "fp": 0,
+        "tn": 5,
+        "fn": 0,
+        "confusion_matrix": [
+          [
+            5,
+            0
+          ],
+          [
+            0,
+            15
+          ]
+        ],
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "evaluation": {
+        "total_pairs": 20,
+        "scored_pairs": 20,
+        "undefined": 0,
+        "undefined_fraction": 0.0,
+        "threshold": 0.6666666666666666,
+        "tp": 13,
+        "fp": 0,
+        "tn": 5,
+        "fn": 2,
+        "confusion_matrix": [
+          [
+            5,
+            0
+          ],
+          [
+            2,
+            13
+          ]
+        ],
+        "precision": 1.0,
+        "recall": 0.8666666666666667,
+        "f1": 0.9285714285714286
+      }
+    }
+  },
+  "evaluated_pairs": [
+    {
+      "pair_id": "pair-016",
+      "left_id": "lab2-05-0",
+      "right_id": "lab2-05-1",
+      "split": "evaluation",
+      "derivation_relation": true,
+      "template_only": false,
+      "token_score": 0.0,
+      "ast_score": 0.6363636363636364,
+      "evidence": null,
+      "warning": null,
+      "review_required": {
+        "token": true,
+        "ast": false
+      }
+    },
+    {
+      "pair_id": "pair-017",
+      "left_id": "lab2-05-0",
+      "right_id": "lab2-05-2",
+      "split": "evaluation",
+      "derivation_relation": true,
+      "template_only": false,
+      "token_score": 1.0,
+      "ast_score": 1.0,
+      "evidence": {
+        "left_start": 4,
+        "left_end": 4,
+        "right_start": 5,
+        "right_end": 5,
+        "matching_tokens": [
+          "value",
+          "=",
+          "1"
+        ]
+      },
+      "warning": null,
+      "review_required": {
+        "token": true,
+        "ast": true
+      }
+    },
+    {
+      "pair_id": "pair-018",
+      "left_id": "lab2-05-1",
+      "right_id": "lab2-05-2",
+      "split": "evaluation",
+      "derivation_relation": true,
+      "template_only": false,
+      "token_score": 0.0,
+      "ast_score": 0.6363636363636364,
+      "evidence": null,
+      "warning": null,
+      "review_required": {
+        "token": true,
+        "ast": false
+      }
+    },
+    {
+      "pair_id": "pair-019",
+      "left_id": "lab2-06-0",
+      "right_id": "lab2-06-1",
+      "split": "evaluation",
+      "derivation_relation": true,
+      "template_only": false,
+      "token_score": 0.23809523809523808,
+      "ast_score": 0.7142857142857143,
+      "evidence": {
+        "left_start": 4,
+        "left_end": 4,
+        "right_start": 4,
+        "right_end": 4,
+        "matching_tokens": [
+          "=",
+          "[",
+          "2"
+        ]
+      },
+      "warning": null,
+      "review_required": {
+        "token": true,
+        "ast": true
+      }
+    },
+    {
+      "pair_id": "pair-020",
+      "left_id": "lab2-06-0",
+      "right_id": "lab2-06-2",
+      "split": "evaluation",
+      "derivation_relation": true,
+      "template_only": false,
+      "token_score": 1.0,
+      "ast_score": 1.0,
+      "evidence": {
+        "left_start": 4,
+        "left_end": 4,
+        "right_start": 5,
+        "right_end": 5,
+        "matching_tokens": [
+          "value",
+          "=",
+          "["
+        ]
+      },
+      "warning": null,
+      "review_required": {
+        "token": true,
+        "ast": true
+      }
+    },
+    {
+      "pair_id": "pair-021",
+      "left_id": "lab2-06-1",
+      "right_id": "lab2-06-2",
+      "split": "evaluation",
+      "derivation_relation": true,
+      "template_only": false,
+      "token_score": 0.23809523809523808,
+      "ast_score": 0.7142857142857143,
+      "evidence": {
+        "left_start": 4,
+        "left_end": 4,
+        "right_start": 5,
+        "right_end": 5,
+        "matching_tokens": [
+          "=",
+          "[",
+          "2"
+        ]
+      },
+      "warning": null,
+      "review_required": {
+        "token": true,
+        "ast": true
+      }
+    },
+    {
+      "pair_id": "pair-022",
+      "left_id": "lab2-07-0",
+      "right_id": "lab2-07-1",
+      "split": "evaluation",
+      "derivation_relation": true,
+      "template_only": false,
+      "token_score": 0.2,
+      "ast_score": 0.7142857142857143,
+      "evidence": {
+        "left_start": 5,
+        "left_end": 5,
+        "right_start": 5,
+        "right_end": 5,
+        "matching_tokens": [
+          "[",
+          ":",
+          ":"
+        ]
+      },
+      "warning": null,
+      "review_required": {
+        "token": true,
+        "ast": true
+      }
+    },
+    {
+      "pair_id": "pair-023",
+      "left_id": "lab2-07-0",
+      "right_id": "lab2-07-2",
+      "split": "evaluation",
+      "derivation_relation": true,
+      "template_only": false,
+      "token_score": 1.0,
+      "ast_score": 1.0,
+      "evidence": {
+        "left_start": 4,
+        "left_end": 4,
+        "right_start": 5,
+        "right_end": 5,
+        "matching_tokens": [
+          "value",
+          "=",
+          "\"python\""
+        ]
+      },
+      "warning": null,
+      "review_required": {
+        "token": true,
+        "ast": true
+      }
+    },
+    {
+      "pair_id": "pair-024",
+      "left_id": "lab2-07-1",
+      "right_id": "lab2-07-2",
+      "split": "evaluation",
+      "derivation_relation": true,
+      "template_only": false,
+      "token_score": 0.2,
+      "ast_score": 0.7142857142857143,
+      "evidence": {
+        "left_start": 5,
+        "left_end": 5,
+        "right_start": 6,
+        "right_end": 6,
+        "matching_tokens": [
+          "[",
+          ":",
+          ":"
+        ]
+      },
+      "warning": null,
+      "review_required": {
+        "token": true,
+        "ast": true
+      }
+    },
+    {
+      "pair_id": "pair-025",
+      "left_id": "lab2-08-0",
+      "right_id": "lab2-08-1",
+      "split": "evaluation",
+      "derivation_relation": true,
+      "template_only": false,
+      "token_score": 0.3076923076923077,
+      "ast_score": 1.0,
+      "evidence": {
+        "left_start": 1,
+        "left_end": 1,
+        "right_start": 1,
+        "right_end": 1,
+        "matching_tokens": [
+          "=",
+          "[",
+          "3"
+        ]
+      },
+      "warning": null,
+      "review_required": {
+        "token": true,
+        "ast": true
+      }
+    },
+    {
+      "pair_id": "pair-026",
+      "left_id": "lab2-08-0",
+      "right_id": "lab2-08-2",
+      "split": "evaluation",
+      "derivation_relation": true,
+      "template_only": false,
+      "token_score": 1.0,
+      "ast_score": 1.0,
+      "evidence": {
+        "left_start": 1,
+        "left_end": 1,
+        "right_start": 2,
+        "right_end": 2,
+        "matching_tokens": [
+          "value",
+          "=",
+          "["
+        ]
+      },
+      "warning": null,
+      "review_required": {
+        "token": true,
+        "ast": true
+      }
+    },
+    {
+      "pair_id": "pair-027",
+      "left_id": "lab2-08-1",
+      "right_id": "lab2-08-2",
+      "split": "evaluation",
+      "derivation_relation": true,
+      "template_only": false,
+      "token_score": 0.3076923076923077,
+      "ast_score": 1.0,
+      "evidence": {
+        "left_start": 1,
+        "left_end": 1,
+        "right_start": 2,
+        "right_end": 2,
+        "matching_tokens": [
+          "=",
+          "[",
+          "3"
+        ]
+      },
+      "warning": null,
+      "review_required": {
+        "token": true,
+        "ast": true
+      }
+    },
+    {
+      "pair_id": "pair-028",
+      "left_id": "lab2-09-0",
+      "right_id": "lab2-09-1",
+      "split": "evaluation",
+      "derivation_relation": true,
+      "template_only": false,
+      "token_score": 0.1111111111111111,
+      "ast_score": 1.0,
+      "evidence": {
+        "left_start": 2,
+        "left_end": 3,
+        "right_start": 2,
+        "right_end": 3,
+        "matching_tokens": [
+          "**",
+          "2",
+          "print"
+        ]
+      },
+      "warning": null,
+      "review_required": {
+        "token": true,
+        "ast": true
+      }
+    },
+    {
+      "pair_id": "pair-029",
+      "left_id": "lab2-09-0",
+      "right_id": "lab2-09-2",
+      "split": "evaluation",
+      "derivation_relation": true,
+      "template_only": false,
+      "token_score": 1.0,
+      "ast_score": 1.0,
+      "evidence": {
+        "left_start": 1,
+        "left_end": 1,
+        "right_start": 2,
+        "right_end": 2,
+        "matching_tokens": [
+          "value",
+          "=",
+          "4"
+        ]
+      },
+      "warning": null,
+      "review_required": {
+        "token": true,
+        "ast": true
+      }
+    },
+    {
+      "pair_id": "pair-030",
+      "left_id": "lab2-09-1",
+      "right_id": "lab2-09-2",
+      "split": "evaluation",
+      "derivation_relation": true,
+      "template_only": false,
+      "token_score": 0.1111111111111111,
+      "ast_score": 1.0,
+      "evidence": {
+        "left_start": 2,
+        "left_end": 3,
+        "right_start": 3,
+        "right_end": 4,
+        "matching_tokens": [
+          "**",
+          "2",
+          "print"
+        ]
+      },
+      "warning": null,
+      "review_required": {
+        "token": true,
+        "ast": true
+      }
+    },
+    {
+      "pair_id": "pair-036",
+      "left_id": "lab2-05-0",
+      "right_id": "lab2-06-0",
+      "split": "evaluation",
+      "derivation_relation": false,
+      "template_only": true,
+      "token_score": 0.0,
+      "ast_score": 0.21428571428571427,
+      "evidence": null,
+      "warning": null,
+      "review_required": {
+        "token": true,
+        "ast": false
+      }
+    },
+    {
+      "pair_id": "pair-037",
+      "left_id": "lab2-05-0",
+      "right_id": "lab2-07-0",
+      "split": "evaluation",
+      "derivation_relation": false,
+      "template_only": true,
+      "token_score": 0.06666666666666667,
+      "ast_score": 0.3076923076923077,
+      "evidence": {
+        "left_start": 5,
+        "left_end": 5,
+        "right_start": 5,
+        "right_end": 5,
+        "matching_tokens": [
+          "result",
+          "=",
+          "value"
+        ]
+      },
+      "warning": null,
+      "review_required": {
+        "token": true,
+        "ast": false
+      }
+    },
+    {
+      "pair_id": "pair-038",
+      "left_id": "lab2-06-0",
+      "right_id": "lab2-07-0",
+      "split": "evaluation",
+      "derivation_relation": false,
+      "template_only": true,
+      "token_score": 0.0,
+      "ast_score": 0.17647058823529413,
+      "evidence": null,
+      "warning": null,
+      "review_required": {
+        "token": true,
+        "ast": false
+      }
+    },
+    {
+      "pair_id": "pair-039",
+      "left_id": "lab2-08-0",
+      "right_id": "lab2-09-0",
+      "split": "evaluation",
+      "derivation_relation": false,
+      "template_only": false,
+      "token_score": 0.08,
+      "ast_score": 0.2857142857142857,
+      "evidence": {
+        "left_start": 3,
+        "left_end": 3,
+        "right_start": 3,
+        "right_end": 3,
+        "matching_tokens": [
+          "print",
+          "(",
+          "result"
+        ]
+      },
+      "warning": null,
+      "review_required": {
+        "token": true,
+        "ast": false
+      }
+    },
+    {
+      "pair_id": "pair-040",
+      "left_id": "lab2-07-0",
+      "right_id": "lab2-08-0",
+      "split": "evaluation",
+      "derivation_relation": false,
+      "template_only": false,
+      "token_score": 0.0,
+      "ast_score": 0.19047619047619047,
+      "evidence": null,
+      "warning": null,
+      "review_required": {
+        "token": true,
+        "ast": false
+      }
+    }
+  ],
+  "report_version": "v2",
+  "config_sha256": "6547361b501be8c68fc74a1eee34b829206c81e6f8b143a66756404136622cc1",
+  "changed_submissions": 18,
+  "changed_pairs": 20,
+  "changed_pair_ids": [
+    "pair-001",
+    "pair-003",
+    "pair-004",
+    "pair-006",
+    "pair-007",
+    "pair-009",
+    "pair-016",
+    "pair-018",
+    "pair-019",
+    "pair-021",
+    "pair-022",
+    "pair-024",
+    "pair-031",
+    "pair-032",
+    "pair-033",
+    "pair-035",
+    "pair-036",
+    "pair-037",
+    "pair-038",
+    "pair-040"
+  ],
+  "note": "Simulation pédagogique du changement de modèle. Il ne s'agit pas d'une nouvelle évaluation indépendante."
+}

@@ -1,0 +1,226 @@
+{
+  "schema_version": 1,
+  "summary": {
+    "token": {
+      "tuning": {
+        "vrai_positif": 15,
+        "vrai_negatif": 2,
+        "faux_positif": 3,
+        "faux_negatif": 0,
+        "indetermine": 0
+      },
+      "evaluation": {
+        "vrai_positif": 15,
+        "vrai_negatif": 4,
+        "faux_positif": 1,
+        "faux_negatif": 0,
+        "indetermine": 0
+      }
+    },
+    "ast": {
+      "tuning": {
+        "vrai_positif": 15,
+        "vrai_negatif": 5,
+        "faux_positif": 0,
+        "faux_negatif": 0,
+        "indetermine": 0
+      },
+      "evaluation": {
+        "vrai_positif": 15,
+        "vrai_negatif": 5,
+        "faux_positif": 0,
+        "faux_negatif": 0,
+        "indetermine": 0
+      }
+    }
+  },
+  "errors": [
+    {
+      "pair_id": "pair-037",
+      "method": "token",
+      "split": "evaluation",
+      "category": "faux_positif",
+      "score": 0.14285714285714285,
+      "threshold": 0.1111111111111111,
+      "template_only": true,
+      "left_id": "lab2-05-0",
+      "right_id": "lab2-07-0",
+      "evidence": {
+        "left_start": 5,
+        "left_end": 5,
+        "right_start": 5,
+        "right_end": 5,
+        "matching_tokens": [
+          "result",
+          "=",
+          "value"
+        ]
+      },
+      "explanation": "Les deux solutions partagent un modèle autorisé. Cette ressemblance ne prouve pas un plagiat."
+    },
+    {
+      "pair_id": "pair-031",
+      "method": "token",
+      "split": "tuning",
+      "category": "faux_positif",
+      "score": 0.42857142857142855,
+      "threshold": 0.1111111111111111,
+      "template_only": true,
+      "left_id": "lab2-00-0",
+      "right_id": "lab2-01-0",
+      "evidence": {
+        "left_start": 4,
+        "left_end": 4,
+        "right_start": 4,
+        "right_end": 4,
+        "matching_tokens": [
+          "value",
+          "=",
+          "5"
+        ]
+      },
+      "explanation": "Les deux solutions partagent un modèle autorisé. Cette ressemblance ne prouve pas un plagiat."
+    },
+    {
+      "pair_id": "pair-034",
+      "method": "token",
+      "split": "tuning",
+      "category": "faux_positif",
+      "score": 0.15789473684210525,
+      "threshold": 0.1111111111111111,
+      "template_only": false,
+      "left_id": "lab2-03-0",
+      "right_id": "lab2-04-0",
+      "evidence": {
+        "left_start": 2,
+        "left_end": 2,
+        "right_start": 2,
+        "right_end": 2,
+        "matching_tokens": [
+          "result",
+          "=",
+          "value"
+        ]
+      },
+      "explanation": "Deux solutions indépendantes peuvent avoir des structures communes."
+    },
+    {
+      "pair_id": "pair-035",
+      "method": "token",
+      "split": "tuning",
+      "category": "faux_positif",
+      "score": 0.11538461538461539,
+      "threshold": 0.1111111111111111,
+      "template_only": false,
+      "left_id": "lab2-02-0",
+      "right_id": "lab2-03-0",
+      "evidence": {
+        "left_start": 5,
+        "left_end": 6,
+        "right_start": 2,
+        "right_end": 3,
+        "matching_tokens": [
+          ")",
+          "print",
+          "("
+        ]
+      },
+      "explanation": "Deux solutions indépendantes peuvent avoir des structures communes."
+    }
+  ],
+  "case_studies": [
+    {
+      "pair_id": "pair-037",
+      "method": "token",
+      "split": "evaluation",
+      "category": "faux_positif",
+      "score": 0.14285714285714285,
+      "threshold": 0.1111111111111111,
+      "template_only": true,
+      "left_id": "lab2-05-0",
+      "right_id": "lab2-07-0",
+      "evidence": {
+        "left_start": 5,
+        "left_end": 5,
+        "right_start": 5,
+        "right_end": 5,
+        "matching_tokens": [
+          "result",
+          "=",
+          "value"
+        ]
+      },
+      "explanation": "Les deux solutions partagent un modèle autorisé. Cette ressemblance ne prouve pas un plagiat."
+    },
+    {
+      "pair_id": "pair-031",
+      "method": "token",
+      "split": "tuning",
+      "category": "faux_positif",
+      "score": 0.42857142857142855,
+      "threshold": 0.1111111111111111,
+      "template_only": true,
+      "left_id": "lab2-00-0",
+      "right_id": "lab2-01-0",
+      "evidence": {
+        "left_start": 4,
+        "left_end": 4,
+        "right_start": 4,
+        "right_end": 4,
+        "matching_tokens": [
+          "value",
+          "=",
+          "5"
+        ]
+      },
+      "explanation": "Les deux solutions partagent un modèle autorisé. Cette ressemblance ne prouve pas un plagiat."
+    },
+    {
+      "pair_id": "pair-034",
+      "method": "token",
+      "split": "tuning",
+      "category": "faux_positif",
+      "score": 0.15789473684210525,
+      "threshold": 0.1111111111111111,
+      "template_only": false,
+      "left_id": "lab2-03-0",
+      "right_id": "lab2-04-0",
+      "evidence": {
+        "left_start": 2,
+        "left_end": 2,
+        "right_start": 2,
+        "right_end": 2,
+        "matching_tokens": [
+          "result",
+          "=",
+          "value"
+        ]
+      },
+      "explanation": "Deux solutions indépendantes peuvent avoir des structures communes."
+    },
+    {
+      "pair_id": "pair-035",
+      "method": "token",
+      "split": "tuning",
+      "category": "faux_positif",
+      "score": 0.11538461538461539,
+      "threshold": 0.1111111111111111,
+      "template_only": false,
+      "left_id": "lab2-02-0",
+      "right_id": "lab2-03-0",
+      "evidence": {
+        "left_start": 5,
+        "left_end": 6,
+        "right_start": 2,
+        "right_end": 3,
+        "matching_tokens": [
+          ")",
+          "print",
+          "("
+        ]
+      },
+      "explanation": "Deux solutions indépendantes peuvent avoir des structures communes."
+    }
+  ],
+  "warning": "Les seuils ont été choisis sur tuning. Seul le groupe evaluation fournit une mesure indépendante. Les alertes ne prouvent pas un plagiat."
+}

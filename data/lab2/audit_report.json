@@ -1,0 +1,12 @@
+{
+  "n_submissions": 30,
+  "n_pairs": 40,
+  "n_tuning": 20,
+  "n_evaluation": 20,
+  "n_template_only": 6,
+  "n_valid_evidence": 40,
+  "family_leakage_checked": true,
+  "self_match_checked": true,
+  "evidence_ranges_checked": true,
+  "warning": "Corpus pédagogique synthétique : ne pas inférer un plagiat."
+}
